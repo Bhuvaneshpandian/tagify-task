@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Questrial', sans-serif;
+    background-image:  #fff;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.tagify-group {
+    border-style: solid;
+    border-radius: 10px;
+    min-height: 70px;
+    width: 750px;
+    position: relative;
+    margin-top: -200px;
+    clear:left;
+    display: table;
+    z-index: 9;
+}
+
+.tag{
+    border-style: groove;
+    border-radius: 10px;
+    width: auto;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    margin: 10px 10px;
+    
+}
+
+
+
+p {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ #trace {
+    margin: 10px 2px;
+    position: relative;
+}
+
+.inputText{
+    height: 45px;
+    width: 250px;
+    border-style: none;
+    border-radius: 10px;
+    background-color:  #fff;
+    margin-top: 10px;
+}
+
+.inputText:focus {
+    outline: none;
+}
+
+ul {
+    width: 750px;
+    list-style: none;
+    border-style: groove;
+    padding: 20px;
+    margin-top: -3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.dropdown_list {
+    animation: growDown 800ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+      transform: scaleY(1.1)
+    }
+    100% {
+      transform: scaleY(1)
+    }
+} 
+
+li {
+    border-style: groove;
+    border-radius: 10px;
+    width: 240px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    margin: 10px 10px;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+
+
+.books-name{
+    height: 20px;   
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.alignleft {
+    float:left;
+}
